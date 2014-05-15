@@ -1,0 +1,7 @@
+Exception in thread "main" java.io.EOFException
+at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2281)
+at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:2750)
+at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:780)
+at java.io.ObjectInputStream.<init>(ObjectInputStream.java:280)
+at HighScores.<init>(HighScores.java:45)
+at HighScores.main(HighScores.java:151)

@@ -1,0 +1,9 @@
+FileInputStream fis = new FileInputStream(file);
+ObjectInputStream ois = new ObjectInputStream(fis);
+ArrayList<Record> currentList = new ArrayList<>();
+// restore the number of objects
+int size = ois.readInt();
+// restore the objects
+for (int i = 0; i < size; i++) {
+	Record current = (Record) ois.readObject();
+	currentList.add(current); }
